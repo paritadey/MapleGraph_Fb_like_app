@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:orientation="vertical"
+    tools:context="com.example.parita.maplegraph.Login">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        app:srcCompat="@drawable/logo" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="25dp"
+        android:id="@+id/mailid"
+        android:maxLength="50"
+        android:singleLine="true"
+        android:textColorHint="@color/textcolor"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Enter User Email ID"
+        android:paddingLeft="15dp"
+        android:textColor="@color/textcolor" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mailid"
+        android:layout_marginTop="11dp"
+        android:password="true"
+        android:background="@drawable/rounded_edit_text"
+        android:drawablePadding="5dp"
+        android:hint="Enter Password"
+        android:maxLength="50"
+        android:paddingLeft="20dp"
+        android:singleLine="true"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/textcolor" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:gravity="center_horizontal"
+        android:text="Sign Up"
+        android:textColor="@color/textcolor"
+        android:textAllCaps="false"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:text="Forget Password ???"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/textcolor"
+        android:id="@+id/forgotpass" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotpass"
+        android:text="Create an Account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/textcolor"
+        android:id="@+id/regislink" />
+</RelativeLayout>

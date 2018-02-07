@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:scrollbars="none"
+    android:layout_height="fill_parent"
+    tools:context="com.example.parita.maplegraph.Profile">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="20dp">
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/etUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="18dp"
+            android:visibility="invisible"/>
+
+
+        <ImageView
+            android:id="@+id/displaypic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/profilepic" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/RelativeLayout02"
+        android:layout_below="@id/RelativeLayout01"
+        android:background="@color/background">
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/background"
+            android:paddingLeft="15dp"
+            android:text="About"
+            android:textAllCaps="false"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mytimeline"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/about"
+            android:background="@color/background"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="25dp"
+            android:text="Timeline"
+            android:textAllCaps="false"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/mytimeline"
+            android:background="@color/background"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="Post"
+            android:textAllCaps="false"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/post"
+            android:background="@color/background"
+            android:paddingLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Photo"
+            android:textAllCaps="false"
+            android:textColor="@color/textcolor" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RelativeLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelativeLayout02">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Profile View "
+            android:textColor="@color/textcolor"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="29dp"
+            android:layout_toLeftOf="@+id/textView"
+            android:layout_toStartOf="@+id/textView"
+            android:text="Username"
+            android:textColor="#8301C4" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvname"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/tvphone"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvname"
+            android:layout_alignStart="@+id/tvname"
+            android:layout_below="@+id/tvname"
+            android:layout_marginTop="30dp"
+            android:text="Contact Number"
+            android:textColor="#8301C4" />
+
+        <TextView
+            android:id="@+id/userphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvphone"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/tvdob"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvphone"
+            android:layout_alignStart="@+id/tvphone"
+            android:layout_below="@+id/tvphone"
+            android:layout_marginTop="31dp"
+            android:text="Date of birth"
+            android:textColor="#8301C4" />
+
+        <TextView
+            android:id="@+id/userbirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userphone"
+            android:layout_alignStart="@+id/userphone"
+            android:layout_alignTop="@+id/tvdob"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/tvgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvdob"
+            android:layout_alignStart="@+id/tvdob"
+            android:layout_below="@+id/tvdob"
+            android:layout_marginTop="38dp"
+            android:text="Gender"
+            android:textColor="#8301C4" />
+
+        <TextView
+            android:id="@+id/usergender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvgender"
+            android:layout_toEndOf="@+id/tvphone"
+            android:layout_toRightOf="@+id/tvphone"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/tvaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvgender"
+            android:layout_alignStart="@+id/tvgender"
+            android:layout_below="@+id/tvgender"
+            android:layout_marginTop="29dp"
+            android:text="Address"
+            android:textColor="#8301C4" />
+
+        <TextView
+            android:id="@+id/useraddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvaddress"
+            android:layout_alignEnd="@+id/usergender"
+            android:layout_alignRight="@+id/usergender"
+            android:textColor="@color/textcolor" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

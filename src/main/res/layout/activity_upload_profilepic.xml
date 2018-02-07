@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.parita.maplegraph.Upload_profilepic">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/RelativeLayout01"
+    android:background="#3C0458">
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:textColor="#ffffff"
+        android:text="Select Image"
+        android:paddingLeft="10dp"
+        android:textSize="16dp"
+        android:id="@+id/uploading"
+        android:paddingTop="10dp"/>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/RelativeLayout02"
+        android:layout_below="@id/RelativeLayout01">
+
+        <ImageView
+            android:id="@+id/uploadimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/backimage" />
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#3C0458"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:text="Upload" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/RelativeLayout03"
+        android:layout_below="@id/RelativeLayout02">
+
+        <TextView
+            android:id="@+id/etUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginStart="39dp"
+            android:visibility="invisible"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
